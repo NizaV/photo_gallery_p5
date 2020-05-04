@@ -77,6 +77,12 @@ footer p{
   color: darkgray;
   opacity: .9;
 }
+
+/* get rid of image number */
+.lb-data .lb-number {
+  visibility: hidden;
+}
+
 /* lightbox closing container */
 .lb-closeContainer {
   margin: 10px;
