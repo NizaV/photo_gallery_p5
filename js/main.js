@@ -23,7 +23,6 @@ $('#search').on('keyup', function() {
             $inputPhoto.hide().fadeIn(200);
         }
     }
-    
 });
 
     
