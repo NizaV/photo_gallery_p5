@@ -17,10 +17,10 @@ $('#search').on('keyup', function() {
     for (let i = 0; i < $lightboxPhoto.length; i += 1) {
         let $inputPhoto = $lightboxPhoto.eq(i);
         if ($inputPhoto.attr("data-title").toLowerCase().indexOf($search) === -1) {
-            $inputPhoto.fadeOut(200);
+            $inputPhoto.parent().fadeOut(200);
         }
         if ($inputPhoto.attr("data-title").toLowerCase().indexOf($search) !== -1) {
-            $inputPhoto.hide().fadeIn(200);
+            $inputPhoto.parent().hide().fadeIn(200);
         }
     }
 });
